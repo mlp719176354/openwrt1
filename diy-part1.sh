@@ -15,3 +15,9 @@
 
 # Add a feed source
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+git clone https://github.com/kuling321/inode7.1_for_openwrt.git package/inode7.1_for_openwrt
+git clone https://github.com/liuqun/njit8021xclient.git package/njit8021xclient
+git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
+git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
+git clone https://github.com/openwrt-dev/po2lmo.git
+pushd po2lmo
