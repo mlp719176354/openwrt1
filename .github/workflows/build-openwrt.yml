@@ -93,10 +93,13 @@ jobs:
       id: package
       run: |
         cd openwrt
+        git clone https://github.com/kuling321/inode7.1_for_openwrt.git package/inode7.1_for_openwrt
+        git clone https://github.com/liuqun/njit8021xclient.git package/njit8021xclient
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+
 
     - name: Compile the firmware
       id: compile
